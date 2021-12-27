@@ -1,0 +1,223 @@
+/* styling header */
+header {
+  padding: 10px;
+  text-align: center;
+  background: #52616b;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  color: #f5f5f5;
+  font-family: "Trebuchet MS";
+}
+/* styling visualization area */
+.visualization {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  font-family: "Trebuchet MS";
+  display: flex;
+  justify-content: center;
+}
+/* styling svg drawspace */
+#drawspace {
+  margin: "10px";
+  background-color: white;
+}
+/* styling labels for drpodown */
+label {
+  color: black;
+  padding: 5px;
+}
+/* styling body of page */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f5f9;
+}
+/* styling problem statement*/
+.problem_statement {
+  margin: 0em 3em 1em 3em;
+  font-family: "Trebuchet MS";
+}
+/* styling footer of page*/
+.footer {
+  background-color: #1e2022;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0 10px;
+  font-size: 15px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
+  font-family: "Trebuchet MS";
+  line-height: 25px;
+  color: #f0f5f9;
+  display: flex;
+  justify-content: space-evenly;
+}
+.graph {
+  color: #1e2022;
+  padding: 12px;
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  align-self: center;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  /* -webkit-appearance: button; */
+  appearance: button;
+  outline: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* styling details in footer*/
+.details {
+  padding-left: 0;
+  list-style: none;
+}
+/* styling header used in footer */
+.footer h6 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* styling dropdown div */
+.box {
+  margin-bottom: 20px;
+}
+/* styling each dropdown*/
+.box select {
+  background-color: white;
+  color: #f5f5f5;
+  padding: 12px;
+  margin-top: 10px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.box select option {
+  padding: 30px;
+}
+
+.tools {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* styling statespace of linechart */
+#statespace {
+  margin: 10px;
+}
+
+/* styling loader div*/
+#loading-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* styling loader*/
+#loader {
+  position: relative;
+  top: 50px;
+  left: -25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 50%;
+  color: #000000;
+}
+/* styling circles in loader*/
+.circle {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #000000;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+/* styling left circle in loader */
+.left-circle {
+  animation-name: left-circle;
+  animation-timing-function: ease-in;
+}
+@keyframes left-circle {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
+  60% {
+    transform: scale(1.15);
+    background-color: rgb(199, 233, 192);
+    opacity: 0.1;
+  }
+  100% {
+    top: 0px;
+  }
+}
+/* styling middle circle in loader*/
+.middle-circle {
+  animation-name: middle-circle;
+  animation-timing-function: linear;
+}
+
+@keyframes middle-circle {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+    transform: scale(1.2);
+    opacity: 0.1;
+  }
+  70% {
+    background-color: #09e8e4;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+/* styling right circle in loader*/
+.right-circle {
+  animation-name: right-circle;
+  animation-timing-function: ease-out;
+}
+
+@keyframes right-circle {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+    transform: scale(1.2);
+    background-color: #364f6b;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.additional {
+  display: flex;
+}
+
+main {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
